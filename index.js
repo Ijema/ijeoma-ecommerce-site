@@ -225,3 +225,71 @@ productGroupBread.addEventListener("click", function(){
     discountPrice5.textContent = "$30"
     discountPrice6.textContent = "$45"
 })
+
+// Enlarge Image On Click
+// document.addEventListener('DOMContentLoaded', function() {
+//     const enlargeableImages = document.querySelectorAll('img[data-enlargeable]');
+//     const displayButton = document.getElementById('displayButton');
+  
+//     displayButton.addEventListener('click', function() {
+//       // Loop through each enlargeable image
+//       enlargeableImages.forEach(function(img) {
+//         img.classList.add('img-enlargeable');
+//         img.addEventListener('click', function() {
+//           const src = img.getAttribute('src');
+  
+//           const overlay = document.createElement('div');
+//           overlay.style.cssText = `
+//             background: rgba(0, 0, 0, 0.5) url(${src}) no-repeat center;
+//             background-size: contain;
+//             width: 100%;
+//             height: 100%;
+//             position: fixed;
+//             z-index: 10000;
+//             top: 0;
+//             left: 0;
+//             cursor: zoom-out;
+//           `;
+  
+//           overlay.addEventListener('click', function() {
+//             overlay.remove();
+//           });
+  
+//           document.body.appendChild(overlay);
+//         });
+//       });
+//     });
+//   });
+  
+
+function openFullscreen(elementId) {
+    var elem = document.getElementById(elementId);
+    if (elem) {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+  }
+  
+// Toggle menu
+function myFunction() {
+    var x = document.getElementById("nav-ul");
+    var windowWidth = window.innerWidth;
+  
+    if (windowWidth >= 0 && windowWidth <= 644) {
+        // if (windowWidth >= 645 && windowWidth <= 994) {
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    } else {
+      // For window widths outside the specified range, leave the menu as is
+    }
+  }
+  
+  

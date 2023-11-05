@@ -7,107 +7,106 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="images/header-fruit.jpg" type="image/icon type">
         <link rel="stylesheet" href="index.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <section class="header-section" aria-roledescription="header section">
-            <header class="title-bar">
-                <p class="title-bar-p">mail@company.com | Free Shipping for all Order of $99</p>
-            </header>
-            <div class="checkout">
-                <img src="images/checkout-icon.webp" alt="Checkout Cart" class="checkout-cart"/>
-                <p id="total-quantity"></p>
-            </div>
-            <div class="search">
-                <label class="search-label">Ijeomafood</label>
-                <select class="search-checkbox">
-                    <option>Select Categories</option>
-                    <option>Fast Foods</option>
-                    <option>Fish & Meats</option>
-                </select>
-                <input type="text" name="search" data-inline="true" class="input-search" placeholder="Search products..."  />
-                <button type="submit" data-role="button" data-inline="true" class="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
-            <nav>
-                <ul class="nav-ul">
+            <container>
+              <div class="header">
+                <h2 class="header-logo">Ijeomafood</h2>
+                <nav>
+                  <ul class="nav-ul" id="nav-ul">
                     <a href="#shop"><li>Shop</li></a>
                     <a href="#products"><li>Products</li></a>
-                    <a href="#special-offer"><li>Special Offer</li></a>   
+                    <a href="#special-offer"><li>Special Offer</li></a>
                     <a href="#contact"><li>Contact Us</li></a>
-                    <a href="#"><li>Blog</li></a> 
-            </nav>
-            <div class="img-slider"></div>
-            <div class="text-display">                    
-                <h4 class="text-display-h4" id="blink">100% Natural Orange Juice</h4>
-                <h3 class="text-display-h3"> Orange Juice Drink</h3>
-                <p class="text-display-p">For good health buy a pack of natural orange juice</p>
-            </div>
-            </section>
-
-            <h2 class="product-header" id="shop">Purchase The best fruits and vegetables from our shop</h2>
-            <article class="products" aria-roledescription="products display">
-                <div class="display-product1">
-                    <div class="product-text">
-                        <h4>Best Selling</h4>
-                        <h2 class="special-space-y">Biotta</h2>
-                        <h2>Juices cherry</h2>
-                        <p class="discount-price" id="discount-price1">$64.00</p>
-                        <p class="main-price">$85.00</p>
-                    </div>
-                <div class="product-image">
-                    <img src="images/vegetables.jpg" alt="product Image" class="product-image"/>
-                    <button type="button" class="add-view-button" id="add-button1">View</button>
-                    <button type="button" class="add-view-button gap" id="add-to-cart-button1">Add to Cart</button>
+                    <a href="#"><li>Blog</li></a>
+                  </ul>
+                </nav>
+                <div class="checkout">
+                  <img src="images/checkout-icon.webp" alt="Checkout Cart" class="checkout-cart" />
+                  <p id="total-quantity"></p>
                 </div>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction();"><i class="fa fa-bars"></i></a>
+                </div>
+              </div>
+            </container>
+          </section>
+          
+
+            <article aria-roledescription="products display">
+                <h2 id="shop">Purchase The best fruits and vegetables from our shop</h2>
+                <div class="products">
+                    <div class="display-product2">
+                        <div class="main-product-details">
+                            <div class="product-text main">
+                                <h4>Best Selling</h4>
+                                <h2 class="special-space-y">Biotta</h2>
+                                <h2>Juices cherry</h2>
+                                <p class="discount-price" id="discount-price1">$64.00</p>
+                                <p class="main-price">$85.00</p>
+                            </div>
+                            <img src="images/avocado.webp" alt="product Image" class="product-image" id="image1" onclick="openFullscreen('image1');" />
+                        </div>
+                    <div class="product-buttons">
+                        <button type="button" class="add-view-button" id="displayButton" onclick="openFullscreen('image1');">View</button>
+                        <button type="button" class="add-view-button gap" id="add-to-cart-button1">Add to Cart</button>
+                    </div> 
+                    </div>
+                    <div class="display-product2">
+                        <div class="main-product-details">
+                            <div class="product-text main">
+                                <h4>Best Selling</h4>
+                                <h2 class="special-space-y">Biotta</h2>
+                                <h2>Juices cherry</h2>
+                                <p class="discount-price" id="discount-price2">$64.00</p>
+                                <p class="main-price">$85.00</p>
+                            </div>
+                            <img src="images/food-plate.jpg" alt="product Image" class="product-image" id="image2" onclick="openFullscreen('image2');" />
+                        </div>
+                    <div class="product-buttons">
+                        <button type="button" class="add-view-button" id="displayButton" onclick="openFullscreen('image2');">View</button>
+                        <button type="button" class="add-view-button gap" id="add-to-cart-button2">Add to Cart</button>
+                    </div>
                 </div>
                 <div class="display-product2">
-                    <div class="product-text">
-                        <h4 style="color:#335E3B;">Best Selling</h4>
-                        <h2 class="special-space-y">Biotta</h2>
-                        <h2>Juices cherry</h2>
-                        <p class="discount-price" id="discount-price2">$64.00</p>
-                        <p class="main-price">$85.00</p>
+                    <div class="main-product-details">
+                        <div class="product-text main">
+                            <h4>Best Selling</h4>
+                            <h2 class="special-space-y">Biotta</h2>
+                            <h2>Juices cherry</h2>
+                            <p class="discount-price" id="discount-price3">$64.00</p>
+                            <p class="main-price">$85.00</p>
+                        </div>
+                        <img src="images/vegetables.jpg" alt="product Image" class="product-image" id="image3" onclick="openFullscreen('image3');" />
                     </div>
-                <div class="product-image">
-                    <img src="images/pawpaw.webp" alt="product Image" class="product-image"/>
-                    <button type="button" class="add-view-button" id="add-button1">View</button>
-                    <button type="button" class="add-view-button gap" id="add-to-cart-button2">Add to Cart</button>
-                </div>
-            </div>
-            <div class="display-product3">
-                <div class="product-text">
-                    <h4>Best Selling</h4>
-                    <h2 class="special-space-y">Biotta</h2>
-                    <h2>Juices cherry</h2>
-                    <p class="discount-price" id="discount-price3">$64.00</p>
-                    <p class="main-price">$85.00</p>
-                </div>
-            <div class="product-image">
-                <img src="images/tomatoes.webp" alt="product Image" class="product-image"/>
-                <button type="button" class="add-view-button" id="add-button1">View</button>
+                <div class="product-buttons">
+                    <button type="button" class="add-view-button" id="add-button3" onclick="openFullscreen('image3');">View</button>
                     <button type="button" class="add-view-button gap" id="add-to-cart-button3">Add to Cart</button>
-            </div>
-            </div>
+                </div>
+                </div>
+                </div>
             </article>
 
             <!-- Special offer section -->
-            <h2 class="special-offer-header" id="special-offer blink">Special Offer</h2>
-            <article class="special-offer-container">
-                <img src="images/fruit-plate.jpg" class="special-offer-image" alt="Special Offer Image" />
+            <h2 class="special-offer-header" id="special-offer">Special Offer</h2>
+            <div class="special-offer-container">
+                <img src="images/fruit-plate.jpg" class="special-offer-image" alt="Special Offer Image" id="image4" onclick="openFullscreen('image4');" />
                 <div class="special-offer">
                     <div class="line"></div>
-                    <p class="special-offer-p" style="margin-bottom:1rem;">Organic Heaven Made</P>
-                    <h2 class="special-offer-h2">Easy Healthy, Happy Life</h2>
-                    <p class="special-offer-p">Nothing heals a broken heart like a sweet bowl of fruits</p>
-                    <p class="special-offer-p">and vegetables. It nourishes, detoxifies the body.</p>
-                    <p class="discount-price special-space-y" id="discount-price7">$10.30</p>
-                    <p class="main-price">$23.30</p>
-                    <button type="submit" class="special-offer-button" id="add-to-cart-button7">ADD TO CART</button>
+                        <p style="margin-bottom:1rem;">Organic Heaven Made</P>
+                        <h2 class="special-offer-h2">Easy Healthy, Happy Life</h2>
+                        <p>Nothing heals a broken heart like a sweet bowl of fruits and vegetables. It nourishes, detoxifies the body.</p>
+                        <p class="discount-price special-space-y" id="discount-price7">$10.30</p>
+                        <p class="main-price">$23.30</p>
+                        <button type="submit" class="add-view-button special-button" id="add-to-cart-button7">ADD TO CART</button>
+                    </div>
                 </div>
-            </article>
 
             <!-- Our Product Section -->
             <h2 class="special-offer-header" style="padding-bottom:48px;" id="products">Our Products</h2>
-            <p class="special-offer-p" style="text-align:center;">We sell fresh and healthy products at affordable prices.</p>
+            <p class="special-offer-p" style="text-align:center;">We sell fresh and healthy products at affordable prices. Click Category below to choose from</p>
             <div class="product-group">
                 <div class="product-group-icon">
                     <img src="images/leaves-icon.png" alt="Herbal Picture Link" class="product-group-image" id="product-group-image1"/>
@@ -115,11 +114,11 @@
                 </div>
                 <div class="product-group-icon">
                     <img src="images/cherry-icon.png" alt="Herbal Picture Link" class="product-group-image" id="product-group-image2"/>
-                    <p class="product-group-p">fruits</p>
+                    <p class="product-group-p">fruit</p>
                 </div>
                 <div class="product-group-icon">
                     <img src="images/tomato-icon.png" alt="Herbal Picture Link" class="product-group-image" id="product-group-image3"/>
-                    <p class="product-group-p">vegetables</p>
+                    <p class="product-group-p">vegetable</p>
                 </div>
                 <div class="product-group-icon">
                     <img src="images/bread-icon.png" alt="Herbal Picture Link"class="product-group-image" id="product-group-image4"/>
@@ -127,49 +126,57 @@
                 </div>
             </div>
             
-            <article class="main-products" id="products" aria-roledescription="products display">
-                <div class="display-main-product1">
-                <div class="product-main-text">
-                    <h4>Best Selling</h4>
-                    <h2 class="special-space-y" id="product-title1">Biotta</h2>
-                    <h2 id="product-name1">Juices cherry</h2>
-                    <p class="discount-price" id="discount-price4">$64.00</p>
-                    <p class="main-price" id="main-price1">$85.00</p>
-                </div>
-            <div class="product-main-image">
-                <img src="images/tomatoes.webp" alt="product Image" class="product-image" id="product-image1"/>
-                <button type="button" class="add-view-button" id="view-button4">View</button>
+    <article id="products" aria-roledescription="products display">                
+        <div class="products">
+            <div class="display-product2">
+                <div class="main-product-details">
+                    <div class="product-text main">
+                        <h4>Best Selling</h4>
+                        <h2 class="special-space-y" id="product-title1">Biotta</h2>
+                        <h2 id="product-name1">Juices cherry</h2>
+                        <p class="discount-price" id="discount-price4">$64.00</p>
+                        <p class="main-price" id="main-price1">$85.00</p>
+                    </div>
+                <img src="images/tomatoes.webp" alt="product Image" class="product-image" id="product-image1" onclick="openFullscreen('product-image1');" />
+            </div>
+            <div class="product-buttons">
+                <button type="button" class="add-view-button" id="view-button4" onclick="openFullscreen('product-image1');">View</button>
                 <button type="button" class="add-view-button gap" id="add-to-cart-button4">Add to Cart</button>
             </div>
-            </div>
-            <div class="display-main-product3">
-                <div class="product-main-text">
+        </div>
+        <div class="display-product2">
+            <div class="main-product-details">
+                <div class="product-text main">
                     <h4>Best Selling</h4>
                     <h2 class="special-space-y" id="product-title2">Biotta</h2>
                     <h2 id="product-name2">Juices cherry</h2>
                     <p class="discount-price" id="discount-price5">$64.00</p>
                     <p class="main-price" id="main-price2">$85.00</p>
                 </div>
-            <div class="product-main-image">
-                <img src="images/vegetables.jpg" alt="product Image" class="product-image" id="product-image2"/>
-                <button type="button" class="add-view-button" id="view-button5">View</button>
-                <button type="button" class="add-view-button gap" id="add-to-cart-button5">Add to Cart</button>
+            <img src="images/tomatoes.webp" alt="product Image" class="product-image" id="product-image2" onclick="openFullscreen('product-image2');" />
+        </div>
+        <div class="product-buttons">
+            <button type="button" class="add-view-button" id="view-button5" onclick="openFullscreen('product-image2');">View</button>
+            <button type="button" class="add-view-button gap" id="add-to-cart-button5">Add to Cart</button>
+        </div>
+    </div>
+    <div class="display-product2">
+        <div class="main-product-details">
+            <div class="product-text main">
+                <h4>Best Selling</h4>
+                <h2 class="special-space-y" id="product-title3">Biotta</h2>
+                <h2 id="product-name3">Juices cherry</h2>
+                <p class="discount-price" id="discount-price6">$64.00</p>
+                <p class="main-price" id="main-price3">$85.00</p>
             </div>
-            </div>
-            <div class="display-main-product2">
-                <div class="product-main-text">
-                    <h4>Best Selling</h4>
-                    <h2 class="special-space-y" id="product-title3">Biotta</h2>
-                    <h2 id="product-name3">Juices cherry</h2>
-                    <p class="discount-price" id="discount-price6">$64.00</p>
-                    <p class="main-price" id="main-price3">$85.00</p>
-                </div>
-            <div class="product-main-image">
-                <img src="images/pawpaw.webp" alt="product Image" class="product-image" id="product-image3"/>
-                <button type="button" class="add-view-button" id="view-button6">View</button>
-                <button type="button" class="add-view-button gap" id="add-to-cart-button6">Add to Cart</button>
-            </div>
-            </div>
+        <img src="images/tomatoes.webp" alt="product Image" class="product-image" id="product-image3" onclick="openFullscreen('product-image3');" />
+    </div>
+    <div class="product-buttons">
+        <button type="button" class="add-view-button" id="view-button6" onclick="openFullscreen('product-image3');">View</button>
+        <button type="button" class="add-view-button gap" id="add-to-cart-button6">Add to Cart</button>
+    </div>
+</div>
+        </div>
     </article>
     
    </body>
